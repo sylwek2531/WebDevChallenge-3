@@ -1,0 +1,17 @@
+{
+  "name": "web3",
+  "homepage": "https://github.com/sylwek2531/WebDevChallenge-3",
+  "authors": [
+    "sylwek2531 <sylwester2531@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

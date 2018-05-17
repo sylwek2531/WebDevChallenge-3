@@ -1,0 +1,26 @@
+{
+  "name": "web3",
+  "version": "1.0.0",
+  "description": "\"# WebDevChallenge-3\"",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sylwek2531/WebDevChallenge-3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sylwek2531/WebDevChallenge-3/issues"
+  },
+  "homepage": "https://github.com/sylwek2531/WebDevChallenge-3#readme",
+  "devDependencies": {
+    "grunt": "^1.0.2",
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.1",
+    "serve-static": "^1.13.2"
+  }
+}
