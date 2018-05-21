@@ -1,4 +1,5 @@
-module.exports = function (grunt) {
+module.exports = function (grunt)
+{
 
     var serveStatic = require('serve-static');
 
@@ -16,8 +17,13 @@ module.exports = function (grunt) {
                 files: [
                     'app/**/*.html',
                     'app/**/*.js',
-                    'app/**/*.css'
+                    'app/**/*.css',
+                    'app/**/*.scss'
                 ]
+            },
+            css: {
+                files: '**/*.scss',
+                tasks: ['sass']
             }
         },
         connect: {
@@ -29,14 +35,16 @@ module.exports = function (grunt) {
             livereload: {
                 options: {
                     open: true,
-                    middleware: function (connect) {
+                    middleware: function (connect)
+                    {
                         return [connect().use('/bower_components', serveStatic('./bower_components')), serveStatic('app')];
                     }
                 }
             }
         },
-        sass: {                              // Task
-            dist: {                            // Target
+        sass: {
+            dist: {// Task
+                // Target
                 options: {                       // Target options
                     style: 'expanded',
                     noCache: true
@@ -48,9 +56,10 @@ module.exports = function (grunt) {
         }
     });
 
-    grunt.registerTask('serve', function () {
+    grunt.registerTask('serve', function ()
+    {
         grunt.task.run(['connect:livereload', 'watch']);
     });
 
-    grunt.registerTask('default', ['serve', 'sass']);
+    grunt.registerTask('default', ['serve']);
 };
